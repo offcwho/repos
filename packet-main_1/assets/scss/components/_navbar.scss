@@ -1,0 +1,25 @@
+.navbar {
+   display: flex;
+   gap: 20px;
+   align-items: center; 
+   @include xl {
+    display: none;
+   }
+   &__menu {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        align-items: center;
+        gap: 18px;
+        &-item {
+            display: inline-flex;
+        }
+        &-link {
+            padding: 2px;
+            &:hover {
+                color: var(--color-blue);
+            }
+        }
+   }
+}

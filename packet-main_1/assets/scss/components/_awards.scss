@@ -1,0 +1,57 @@
+.awards{
+    width: 100%;
+    padding: 75px 0;
+    @include md{
+        padding: 45px 0;
+    }
+    &__headline{
+        max-width: 680px;
+        margin: 0 auto 55px auto;
+        text-align: center;
+    }
+    &__title{
+        margin-bottom: 17px;
+    }
+    &__grid{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        @include lg{
+            grid-template-columns: 1fr;
+            row-gap: 20px;
+        }
+    }
+    &__list{
+        margin: 0;
+        padding: 0 70px 0 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+        @include lf{
+            padding: 0;
+        }
+        &-item{
+            display: flex;
+            align-items: start;
+            gap: 30px;
+        }
+        &-icon{
+            min-width: 48px;
+            height: 48px;
+            object-fit: cover;
+        }
+        &-name {
+            margin: 0;
+            padding: 0;
+            color: var(--color-accent);
+            font-size: 18px;
+            font-weight: 400;
+        }
+        &-text{
+            margin: 10px 0 0 0;
+            padding: 0;
+            line-height: 1.5;
+        }
+    }
+}
